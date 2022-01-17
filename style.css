@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    color: #292F3A;
+}
+
+.app{
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    background-color: #f5f5f5;
+    padding: 30px 20px;
+    font-weight: 900;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+}
+
+.title{
+    font-size: xx-large;
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.bar{
+    height: 5px;
+    margin: 15px 0;
+    width: 70%;
+    background-color: #FF2365;
+}
+
+.box{
+    background-color: white;
+    padding: 20px 40px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.13);
+    border-radius: 8px;
+    border-top: 10px solid #FF2365;
+    z-index: 2;
+}
+
+.box .box-message{
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(73, 73, 73);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: rgb(95, 95, 95);
+}
+
+.form-group{
+    width: 100%;
+}
+
+label{
+    font-size: small;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(109, 109, 109);
+}
+
+input{
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    font-size: large;
+    font-weight: 900;
+    display: block;
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input{
+    border: 1px solid rgba(128, 128, 128, 0.226);
+    border-radius: 3px;
+}
+
+input:focus{
+    outline: 1px solid #FF2365;
+}
+
+input[type=submit]{
+    align-self: center;
+    background-color: #FF2365;
+    color: white;
+    margin-top: 40px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: medium;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.199)
+}
+
+input[type=submit]:hover{
+    cursor: pointer;
+    background-color: rgb(233, 30, 91);
+    color: white;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.199)
+}
+
+.box .links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    color: rgb(187, 187, 187);
+}
+
+.box .links a{
+    font-size: small;
+    text-decoration: none;
+    margin-top: 10px;
+    color: rgb(83, 83, 83);
+    font-size: smaller;
+    font-weight: bolder;
+}
+
+.box .links a strong{
+    color: rgb(105, 105, 105);
+}
+
+@media only screen and (max-width: 600px) {
+    .title{
+        font-size: x-large;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .box{
+        width: 400px;
+    }
+}
+
+.curves{
+    z-index: 1;
+}
+
+.curve1{
+    border-top-left-radius: 50% 150px !important;
+    border-top-right-radius: 50% 150px !important;
+    position: absolute;
+    overflow: hidden;
+    width: 160%; 
+    bottom: 0;
+    background-color:#E6E7F2;
+    background-size: 42% auto;
+    height:30%;
+}
+
+.curve2{
+    /* border-top-left-radius: 50% 150px !important; */
+    /* border-top-right-radius: 50% 450px !important; */
+    border-top-right-radius:90% 300px;
+    border-top-left-radius: 90% 100px;
+    position: absolute;
+    overflow: hidden;
+    width: 70%; 
+    height: 30%;
+    bottom: 0;
+    left: 0;
+    background-color:#EBEDF4;
+    background-size: 42% auto;
+}
